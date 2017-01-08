@@ -28,9 +28,9 @@ import os, shutil
 class WelcomeUi(QWidget):
     def __init__(self, parent=None):
         super().__init__()
-        self.setWindowTitle(self.tr("Welcome Pisi Linux"))
+        self.setWindowTitle(self.tr("Welcome Lime Linux"))
         self.setFixedSize(700, 475)
-        self.setWindowIcon(QIcon(":/images/pisilinux-welcome.svg"))
+        self.setWindowIcon(QIcon(":/images/lime-welcome.svg"))
         self.setLayout(QVBoxLayout())
         self.layout().setSpacing(0)
         self.layout().setContentsMargins(0, 0, 0, 0)
@@ -50,13 +50,13 @@ class WelcomeUi(QWidget):
         self.logoLabel = QLabel()
         self.logoLabel.setFixedSize(64, 64)
         self.logoLabel.setScaledContents(True)
-        self.logoLabel.setPixmap(QIcon(":/images/pisi-white.svg").pixmap(self.logoLabel.size()))
+        self.logoLabel.setPixmap(QIcon(":/images/lime-white.svg").pixmap(self.logoLabel.size()))
         self.headerWidget.layout().addWidget(self.logoLabel)
 
         self.pisiLogoLabel = QLabel()
         self.pisiLogoLabel.setFixedSize(157, 48)
         self.pisiLogoLabel.setScaledContents(True)
-        self.pisiLogoLabel.setPixmap(QPixmap(":/images/pisi.png"))
+        self.pisiLogoLabel.setPixmap(QPixmap(":/images/lime.png"))
         self.headerWidget.layout().addWidget(self.pisiLogoLabel)
 
         self.headerWidget.layout().addItem(QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Expanding))
@@ -65,7 +65,8 @@ class WelcomeUi(QWidget):
         font = self.versionLabel.font()
         font.setPointSize(12)
         self.versionLabel.setFont(font)
-        self.versionLabel.setText("{} - {}".format(QSysInfo.productVersion(), QSysInfo.currentCpuArchitecture()))
+        self.versionLabel.setText("12313 - 31231")
+        #self.versionLabel.setText("{} - {}".format(QSysInfo.productVersion(), QSysInfo.currentCpuArchitecture()))
         self.versionLabel.setStyleSheet("color: white; font-weight: bold;")
         self.headerWidget.layout().addWidget(self.versionLabel)
 
@@ -76,9 +77,9 @@ class WelcomeUi(QWidget):
         self.layout().addWidget(self.contentWidget)
 
         self.descriptionLabel = QLabel()
-        self.descriptionLabel.setText(self.tr("Welcome to Pisi Linux! Thank you for joining our community!\n\n"\
-                                              "As Pisi Linux developers, we hope you enjoy using Pisi Linux. "\
-                                              "The following links will guide you while using Pisi Linux. Please do not "\
+        self.descriptionLabel.setText(self.tr("Welcome to Lime Linux! Thank you for joining our community!\n\n"\
+                                              "As Lime Linux developers, we hope you enjoy using Lime Linux. "\
+                                              "The following links will guide you while using Lime Linux. Please do not "\
                                               "hesitate to inform about your experiences, suggestions and errors you have encountered."))
         self.descriptionLabel.setWordWrap(True)
         font = self.descriptionLabel.font()
@@ -121,7 +122,7 @@ class WelcomeUi(QWidget):
         self.wikiButton = QPushButton()
         self.wikiButton.setFixedWidth(150)
         self.wikiButton.setCursor(Qt.PointingHandCursor)
-        self.wikiButton.setText(self.tr("Pisi Linux Wiki"))
+        self.wikiButton.setText(self.tr("Lime Linux Wiki"))
         self.wikiButton.setIcon(QIcon(":/images/wiki.svg"))
         self.wikiButton.setIconSize(QSize(32, 32))
         vlayoutI.addWidget(self.wikiButton)
@@ -254,7 +255,7 @@ class WelcomeUi(QWidget):
 
         self.openCheckBox = QCheckBox()
         self.openCheckBox.setChecked(os.path.exists(os.path.join(os.environ["HOME"],
-                                                                 ".config", "autostart", "pisilinux-welcome.desktop")))
+                                                                 ".config", "autostart", "lime-welcome.desktop")))
         font = self.openCheckBox.font()
         font.setBold(True)
         self.openCheckBox.setFont(font)
@@ -262,12 +263,10 @@ class WelcomeUi(QWidget):
         self.openCheckBox.setStyleSheet("color: white;")
         self.footerWidget.layout().addWidget(self.openCheckBox)
 
-
         self.facebookButton.clicked.connect(self.facebookPage)
         self.googleButton.clicked.connect(self.googlePage)
         self.twitterButton.clicked.connect(self.twitterPage)
         self.githubButton.clicked.connect(self.githubPage)
-
 
         self.installDocButton.clicked.connect(self.installedDoc)
         self.releaseButton.clicked.connect(self.releaseNote)
@@ -292,16 +291,16 @@ class WelcomeUi(QWidget):
             self.contentWidget.layout().addItem(QSpacerItem(20, 50, QSizePolicy.Expanding, QSizePolicy.Minimum))
 
     def facebookPage(self):
-        QDesktopServices.openUrl(QUrl("https://www.facebook.com/Pisilinux/"))
+        QDesktopServices.openUrl(QUrl("https://www.facebook.com/Limelinux/"))
 
     def googlePage(self):
         QDesktopServices.openUrl(QUrl("https://plus.google.com/communities/113565681602860915332"))
 
     def twitterPage(self):
-        QDesktopServices.openUrl(QUrl("https://twitter.com/pisilinux"))
+        QDesktopServices.openUrl(QUrl("https://twitter.com/limelinux"))
 
     def githubPage(self):
-        QDesktopServices.openUrl(QUrl("https://github.com/pisilinux"))
+        QDesktopServices.openUrl(QUrl("https://github.com/limelinux"))
 
     def installedDoc(self):
         QProcess.startDetached("xdg-open /usr/share/welcome/data/pisilinux-2-0-kurulum-belgesi.pdf")
@@ -310,14 +309,14 @@ class WelcomeUi(QWidget):
         pass
 
     def wikiPage(self):
-        QDesktopServices.openUrl(QUrl("http://wiki.pisilinux.org"))
+        QDesktopServices.openUrl(QUrl("http://wiki.limelinux.com"))
 
     def forumPage(self):
-        QDesktopServices.openUrl(QUrl("http://forum.pisilinux.org"))
+        QDesktopServices.openUrl(QUrl("http://forum.limelinux.com"))
 
     def chatPages(self):
-        QDesktopServices.openUrl(QUrl("http://pisi.slack.com"))
-        QDesktopServices.openUrl(QUrl("http://www.pisilinux.org/irc-2/"))
+        QDesktopServices.openUrl(QUrl("http://limelinux.slack.com"))
+        #QDesktopServices.openUrl(QUrl("http://www.pisilinux.org/irc-2/"))
 
     def calamaresExec(self):
         QProcess.startDetached("sudo LC_ALL=en_US calamares &")
@@ -326,18 +325,18 @@ class WelcomeUi(QWidget):
         QProcess.startDetached("kaptan &")
 
     def involvedPage(self):
-        QDesktopServices.openUrl(QUrl("http://www.pisilinux.org/iletisim/"))
+        QDesktopServices.openUrl(QUrl("http://www.limelinux.com/iletisim/"))
 
     def donatePage(self):
-        QDesktopServices.openUrl(QUrl("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AS4PKA7HH38PE"))
+        QDesktopServices.openUrl(QUrl("https://www.patreon.com/limelinux"))
 
     def issuePage(self):
-        QDesktopServices.openUrl(QUrl("https://github.com/pisilinux/main/issues/new"))
+        QDesktopServices.openUrl(QUrl("https://github.com/limelinux/packages/issues/new"))
 
     def openState(self):
         if self.openCheckBox.isChecked():
             try:
-                shutil.copy("/usr/share/welcome/data/pisilinux-welcome.desktop",
+                shutil.copy("/usr/share/lime-welcome/data/lime-welcome.desktop",
                             os.path.join(os.environ["HOME"], ".config", "autostart"))
 
             except FileNotFoundError as err:
@@ -345,7 +344,7 @@ class WelcomeUi(QWidget):
 
         else:
             try:
-                os.remove(os.path.join(os.environ["HOME"], ".config", "autostart", "pisilinux-welcome.desktop"))
+                os.remove(os.path.join(os.environ["HOME"], ".config", "autostart", "lime-welcome.desktop"))
 
             except OSError as err:
                 print(err)

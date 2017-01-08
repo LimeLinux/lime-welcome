@@ -1,5 +1,5 @@
-# pisilinux-welcome
-Pisi Linux live ve kurulum sonrasında kullanıcı karşılayan hoşgeldin uygulaması.
+# lime-welcome
+Lime Linux, live ve kurulum sonrasında kullanıcıyı karşılayan hoşgeldin uygulaması.
 
 # Sanatsal İçerik
 
