@@ -6,49 +6,49 @@
     <message>
         <location filename="../welcome/welcomeui.py" line="31"/>
         <source>Welcome Pisi Linux</source>
-        <translation>Pisi Linux&apos;a Hoşgeldiniz</translation>
+        <translation type="obsolete">Pisi Linux&apos;a Hoşgeldiniz</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="79"/>
         <source>Welcome to Pisi Linux! Thank you for joining our community!
 
 As Pisi Linux developers, we hope you enjoy using Pisi Linux. The following links will guide you while using Pisi Linux. Please do not hesitate to inform about your experiences, suggestions and errors you have encountered.</source>
-        <translation>Pisi Linux&apos;a Hoşgeldiniz! Topluluğumuza katıldığınız için teşekkür ederiz!
+        <translation type="obsolete">Pisi Linux&apos;a Hoşgeldiniz! Topluluğumuza katıldığınız için teşekkür ederiz!
 
 Pisi Linux geliştiricileri olarak Pisi Linux&apos;u kullanmaktan zevk almanızı umuyoruz. Aşağıdaki bağlantılar Pisi Linux kullanmanıza yardımcı olacaktır. Deneyimlerinizi, önerilerinizi ve karşılaştığınız hataları bize bildirmekten çekinmeyiniz.</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="102"/>
+        <location filename="../welcome/welcomeui.py" line="103"/>
         <source>Documents</source>
         <translation>Belgeler</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="108"/>
+        <location filename="../welcome/welcomeui.py" line="109"/>
         <source>Installation Guide</source>
         <translation>Kurulum Belgesi</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="116"/>
+        <location filename="../welcome/welcomeui.py" line="117"/>
         <source>Release Notes</source>
         <translation>Sürüm Notları</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="124"/>
         <source>Pisi Linux Wiki</source>
-        <translation>Pisi Linux Wiki</translation>
+        <translation type="obsolete">Pisi Linux Wiki</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="137"/>
+        <location filename="../welcome/welcomeui.py" line="138"/>
         <source>Support</source>
         <translation>Destek</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="143"/>
+        <location filename="../welcome/welcomeui.py" line="144"/>
         <source>Forum</source>
         <translation>Forum</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="151"/>
+        <location filename="../welcome/welcomeui.py" line="152"/>
         <source>Chat Rooms</source>
         <translation>Sohbet Odaları</translation>
     </message>
@@ -85,10 +85,10 @@ Pisi Linux geliştiricileri olarak Pisi Linux&apos;u kullanmaktan zevk almanız�
     <message>
         <location filename="../welcome/welcomeui.py" line="234"/>
         <source>Google+ Page</source>
-        <translation>Google+ Sayfası</translation>
+        <translation type="obsolete">Google+ Sayfası</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="242"/>
+        <location filename="../welcome/welcomeui.py" line="234"/>
         <source>Twitter Page</source>
         <translation>Twitter Sayfası</translation>
     </message>
@@ -103,12 +103,12 @@ Pisi Linux geliştiricileri olarak Pisi Linux&apos;u kullanmaktan zevk almanız�
         <translation>Sistem açılışında göster</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="287"/>
+        <location filename="../welcome/welcomeui.py" line="285"/>
         <source>Start Kaptan</source>
         <translation>Kaptan&apos;ı Başlat</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="290"/>
+        <location filename="../welcome/welcomeui.py" line="288"/>
         <source>Project</source>
         <translation>Proje</translation>
     </message>
@@ -128,9 +128,33 @@ Pisi Linux geliştiricileri olarak Pisi Linux&apos;u kullanmaktan zevk almanız�
         <translation type="obsolete">Hataları Raporla</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="159"/>
+        <location filename="../welcome/welcomeui.py" line="160"/>
         <source>Bug Report</source>
         <translation>Hata Raporla</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="31"/>
+        <source>Welcome Lime Linux</source>
+        <translation>Lime Linux&apos;a Hoş Geldiniz</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="80"/>
+        <source>Welcome to Lime Linux! Thank you for joining our community!
+
+As Lime Linux developers, we hope you enjoy using Lime Linux. The following links will guide you while using Lime Linux. Please do not hesitate to inform about your experiences, suggestions and errors you have encountered.</source>
+        <translation>Lime Linux&apos;a Hoşgeldiniz! Topluluğumuza katıldığınız için teşekkür ederiz!
+
+Lime Linux geliştiricileri olarak Lime Linux&apos;u kullanmaktan zevk almanızı umuyoruz. Aşağıdaki bağlantılar Lime Linux kullanmanıza yardımcı olacaktır. Deneyimlerinizi, önerilerinizi ve karşılaştığınız hataları bize bildirmekten çekinmeyiniz.</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="125"/>
+        <source>Lime Linux Wiki</source>
+        <translation>Lime Linux Wikisi</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="242"/>
+        <source>Youtube Channel</source>
+        <translation>Youtube Kanalı</translation>
     </message>
 </context>
 </TS>

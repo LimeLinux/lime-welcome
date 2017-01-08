@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="nl_NL" sourcelanguage="en_US">
+<TS version="2.0" language="nl_NL" sourcelanguage="en_US">
 <context>
     <name>WelcomeUi</name>
     <message>
         <location filename="../welcome/welcomeui.py" line="31"/>
         <source>Welcome Pisi Linux</source>
-        <translation>Welkom Pisi Linux</translation>
+        <translation type="obsolete">Welkom Pisi Linux</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="79"/>
         <source>Welcome to Pisi Linux! Thank you for joining our community!
 
 As Pisi Linux developers, we hope you enjoy using Pisi Linux. The following links will guide you while using Pisi Linux. Please do not hesitate to inform about your experiences, suggestions and errors you have encountered.</source>
-        <translation>Welkom bij Pisi Linux! Bedankt voor u deelname aan onze community !
+        <translation type="obsolete">Welkom bij Pisi Linux! Bedankt voor u deelname aan onze community !
 
 Wij als Pisi Linux-ontwikkelaars, we hopen dat u hebt veel plezier met Pisi Linux. In de volgende links krijgt u het gebruik van Pisi Linux te zijn. Aarzel niet om ons te informeren over je ervaringen, suggesties en fouten die je bent tegengekomen.</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="102"/>
+        <location filename="../welcome/welcomeui.py" line="103"/>
         <source>Documents</source>
         <translation>Documenten</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="108"/>
+        <location filename="../welcome/welcomeui.py" line="109"/>
         <source>Installation Guide</source>
         <translation>Installatie gids</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="116"/>
+        <location filename="../welcome/welcomeui.py" line="117"/>
         <source>Release Notes</source>
         <translation>Release Notes</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="124"/>
         <source>Pisi Linux Wiki</source>
-        <translation>Pisi Linux Wiki</translation>
+        <translation type="obsolete">Pisi Linux Wiki</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="137"/>
+        <location filename="../welcome/welcomeui.py" line="138"/>
         <source>Support</source>
         <translation>Ondersteuning</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="143"/>
+        <location filename="../welcome/welcomeui.py" line="144"/>
         <source>Forum</source>
         <translation>Forum</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="151"/>
+        <location filename="../welcome/welcomeui.py" line="152"/>
         <source>Chat Rooms</source>
         <translation>Chatrooms</translation>
     </message>
@@ -85,10 +85,10 @@ Wij als Pisi Linux-ontwikkelaars, we hopen dat u hebt veel plezier met Pisi Linu
     <message>
         <location filename="../welcome/welcomeui.py" line="234"/>
         <source>Google+ Page</source>
-        <translation>Google+ pagina</translation>
+        <translation type="obsolete">Google+ pagina</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="242"/>
+        <location filename="../welcome/welcomeui.py" line="234"/>
         <source>Twitter Page</source>
         <translation>Twitter pagina</translation>
     </message>
@@ -103,12 +103,12 @@ Wij als Pisi Linux-ontwikkelaars, we hopen dat u hebt veel plezier met Pisi Linu
         <translation>Show on startup</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="287"/>
+        <location filename="../welcome/welcomeui.py" line="285"/>
         <source>Start Kaptan</source>
         <translation>Start Kaptan</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="290"/>
+        <location filename="../welcome/welcomeui.py" line="288"/>
         <source>Project</source>
         <translation>Project</translation>
     </message>
@@ -123,9 +123,33 @@ Wij als Pisi Linux-ontwikkelaars, we hopen dat u hebt veel plezier met Pisi Linu
         <translation type="obsolete">Bugs Report</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="159"/>
+        <location filename="../welcome/welcomeui.py" line="160"/>
         <source>Bug Report</source>
         <translation>Bug Report</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="31"/>
+        <source>Welcome Lime Linux</source>
+        <translation>Welkom Lime Linux</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="80"/>
+        <source>Welcome to Lime Linux! Thank you for joining our community!
+
+As Lime Linux developers, we hope you enjoy using Lime Linux. The following links will guide you while using Lime Linux. Please do not hesitate to inform about your experiences, suggestions and errors you have encountered.</source>
+        <translation>Welkom bij Lime Linux! Bedankt voor u deelname aan onze community !
+
+Wij als Lime Linux-ontwikkelaars, we hopen dat u hebt veel plezier met Lime Linux. In de volgende links krijgt u het gebruik van Lime Linux te zijn. Aarzel niet om ons te informeren over je ervaringen, suggesties en fouten die je bent tegengekomen.</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="125"/>
+        <source>Lime Linux Wiki</source>
+        <translation>Lime Linux Wiki</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="242"/>
+        <source>Youtube Channel</source>
+        <translation>Youtube Kanaal</translation>
     </message>
 </context>
 </TS>

@@ -65,9 +65,9 @@ class WelcomeUi(QWidget):
         font = self.versionLabel.font()
         font.setPointSize(12)
         self.versionLabel.setFont(font)
-        self.versionLabel.setText("12313 - 31231")
-        #self.versionLabel.setText("{} - {}".format(QSysInfo.productVersion(), QSysInfo.currentCpuArchitecture()))
-        self.versionLabel.setStyleSheet("color: white; font-weight: bold;")
+        #self.versionLabel.setText("12313 - 31231")
+        self.versionLabel.setText("{} - {}".format(QSysInfo.productVersion(), QSysInfo.currentCpuArchitecture()))
+        self.versionLabel.setStyleSheet("color: #80ff80; font-weight: bold;")
         self.headerWidget.layout().addWidget(self.versionLabel)
 
         #######################
@@ -162,7 +162,6 @@ class WelcomeUi(QWidget):
         self.bugsButton.setIconSize(QSize(32, 32))
         vlayoutII.addWidget(self.bugsButton)
 
-
         vlayoutIII = QVBoxLayout()
 
         self.installLabel = QLabel()
@@ -227,14 +226,6 @@ class WelcomeUi(QWidget):
         self.facebookButton.setToolTip(self.tr("Facebook Page"))
         self.footerWidget.layout().addWidget(self.facebookButton)
 
-        self.googleButton = QPushButton()
-        self.googleButton.setFixedSize(36, 36)
-        self.googleButton.setIconSize(QSize(36, 36))
-        self.googleButton.setIcon(QIcon(":/images/google.png"))
-        self.googleButton.setCursor(Qt.PointingHandCursor)
-        self.googleButton.setToolTip(self.tr("Google+ Page"))
-        self.footerWidget.layout().addWidget(self.googleButton)
-
         self.twitterButton = QPushButton()
         self.twitterButton.setFixedSize(36, 36)
         self.twitterButton.setIconSize(QSize(36, 36))
@@ -242,6 +233,14 @@ class WelcomeUi(QWidget):
         self.twitterButton.setCursor(Qt.PointingHandCursor)
         self.twitterButton.setToolTip(self.tr("Twitter Page"))
         self.footerWidget.layout().addWidget(self.twitterButton)
+
+        self.youtubeButton = QPushButton()
+        self.youtubeButton.setFixedSize(36, 36)
+        self.youtubeButton.setIconSize(QSize(36, 36))
+        self.youtubeButton.setIcon(QIcon(":/images/youtube.png"))
+        self.youtubeButton.setCursor(Qt.PointingHandCursor)
+        self.youtubeButton.setToolTip(self.tr("Youtube Channel"))
+        self.footerWidget.layout().addWidget(self.youtubeButton)
 
         self.githubButton = QPushButton()
         self.githubButton.setFixedSize(36, 36)
@@ -260,11 +259,11 @@ class WelcomeUi(QWidget):
         font.setBold(True)
         self.openCheckBox.setFont(font)
         self.openCheckBox.setText(self.tr("Show on startup"))
-        self.openCheckBox.setStyleSheet("color: white;")
+        self.openCheckBox.setStyleSheet("color: #80ff80;")
         self.footerWidget.layout().addWidget(self.openCheckBox)
 
         self.facebookButton.clicked.connect(self.facebookPage)
-        self.googleButton.clicked.connect(self.googlePage)
+        self.youtubeButton.clicked.connect(self.youtubePage)
         self.twitterButton.clicked.connect(self.twitterPage)
         self.githubButton.clicked.connect(self.githubPage)
 
@@ -291,16 +290,16 @@ class WelcomeUi(QWidget):
             self.contentWidget.layout().addItem(QSpacerItem(20, 50, QSizePolicy.Expanding, QSizePolicy.Minimum))
 
     def facebookPage(self):
-        QDesktopServices.openUrl(QUrl("https://www.facebook.com/Limelinux/"))
-
-    def googlePage(self):
-        QDesktopServices.openUrl(QUrl("https://plus.google.com/communities/113565681602860915332"))
+        QDesktopServices.openUrl(QUrl("https://www.facebook.com/LimeLinux/"))
 
     def twitterPage(self):
         QDesktopServices.openUrl(QUrl("https://twitter.com/limelinux"))
 
     def githubPage(self):
         QDesktopServices.openUrl(QUrl("https://github.com/limelinux"))
+
+    def youtubePage(self):
+        QDesktopServices.openUrl(QUrl("https://www.youtube.com/channel/UCCYADWqop8p9wH6UbKWFFgg"))
 
     def installedDoc(self):
         QProcess.startDetached("xdg-open /usr/share/welcome/data/pisilinux-2-0-kurulum-belgesi.pdf")
@@ -315,8 +314,7 @@ class WelcomeUi(QWidget):
         QDesktopServices.openUrl(QUrl("http://forum.limelinux.com"))
 
     def chatPages(self):
-        QDesktopServices.openUrl(QUrl("http://limelinux.slack.com"))
-        #QDesktopServices.openUrl(QUrl("http://www.pisilinux.org/irc-2/"))
+        QDesktopServices.openUrl(QUrl("https://kiwiirc.com/client/irc.freenode.net/#limelinux"))
 
     def calamaresExec(self):
         QProcess.startDetached("sudo LC_ALL=en_US calamares &")

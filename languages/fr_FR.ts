@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="fr_FR" sourcelanguage="en_US">
+<TS version="2.0" language="fr_FR" sourcelanguage="en_US">
 <context>
     <name>WelcomeUi</name>
     <message>
         <location filename="../welcome/welcomeui.py" line="31"/>
         <source>Welcome Pisi Linux</source>
-        <translation>Bienvenue Pisi Linux</translation>
+        <translation type="obsolete">Bienvenue Pisi Linux</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="79"/>
         <source>Welcome to Pisi Linux! Thank you for joining our community!
 
 As Pisi Linux developers, we hope you enjoy using Pisi Linux. The following links will guide you while using Pisi Linux. Please do not hesitate to inform about your experiences, suggestions and errors you have encountered.</source>
-        <translation>Bienvenue sur Pisi Linux! Merci de vous joindre à notre communauté!
+        <translation type="obsolete">Bienvenue sur Pisi Linux! Merci de vous joindre à notre communauté!
 
 En tant que développeurs Pisi Linux, nous espérons que vous apprécierez Pisi Linux. Les liens suivants vous guideront tout en utilisant Pisi Linux. S&apos;il vous plaît ne pas hésiter à informer sur vos expériences, vos suggestions et les erreurs que vous avez rencontrés.</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="102"/>
+        <location filename="../welcome/welcomeui.py" line="103"/>
         <source>Documents</source>
         <translation>Documents</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="108"/>
+        <location filename="../welcome/welcomeui.py" line="109"/>
         <source>Installation Guide</source>
         <translation>Guides d&apos;installation</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="116"/>
+        <location filename="../welcome/welcomeui.py" line="117"/>
         <source>Release Notes</source>
         <translation>Notes de version</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="124"/>
         <source>Pisi Linux Wiki</source>
-        <translation>Pisi Linux Wiki</translation>
+        <translation type="obsolete">Pisi Linux Wiki</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="137"/>
+        <location filename="../welcome/welcomeui.py" line="138"/>
         <source>Support</source>
         <translation>Soutien</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="143"/>
+        <location filename="../welcome/welcomeui.py" line="144"/>
         <source>Forum</source>
         <translation>Forum</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="151"/>
+        <location filename="../welcome/welcomeui.py" line="152"/>
         <source>Chat Rooms</source>
         <translation>Salles de discussion</translation>
     </message>
@@ -85,10 +85,10 @@ En tant que développeurs Pisi Linux, nous espérons que vous apprécierez Pisi 
     <message>
         <location filename="../welcome/welcomeui.py" line="234"/>
         <source>Google+ Page</source>
-        <translation>La page Google+</translation>
+        <translation type="obsolete">La page Google+</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="242"/>
+        <location filename="../welcome/welcomeui.py" line="234"/>
         <source>Twitter Page</source>
         <translation>La page Twitter</translation>
     </message>
@@ -103,12 +103,12 @@ En tant que développeurs Pisi Linux, nous espérons que vous apprécierez Pisi 
         <translation>Montrer au démarrage</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="287"/>
+        <location filename="../welcome/welcomeui.py" line="285"/>
         <source>Start Kaptan</source>
         <translation>Démarrer Kaptan</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="290"/>
+        <location filename="../welcome/welcomeui.py" line="288"/>
         <source>Project</source>
         <translation>Projet</translation>
     </message>
@@ -123,9 +123,33 @@ En tant que développeurs Pisi Linux, nous espérons que vous apprécierez Pisi 
         <translation type="obsolete">Rapport d&apos;erreur</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="159"/>
+        <location filename="../welcome/welcomeui.py" line="160"/>
         <source>Bug Report</source>
         <translation>Rapport d&apos;erreur</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="31"/>
+        <source>Welcome Lime Linux</source>
+        <translation>Bienvenue Lime Linux</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="80"/>
+        <source>Welcome to Lime Linux! Thank you for joining our community!
+
+As Lime Linux developers, we hope you enjoy using Lime Linux. The following links will guide you while using Lime Linux. Please do not hesitate to inform about your experiences, suggestions and errors you have encountered.</source>
+        <translation>Bienvenue sur Lime Linux! Merci de vous joindre à notre communauté!
+
+En tant que développeurs Lime Linux, nous espérons que vous apprécierez Lime Linux. Les liens suivants vous guideront tout en utilisant Lime Linux. S&apos;il vous plaît ne pas hésiter à informer sur vos expériences, vos suggestions et les erreurs que vous avez rencontrés.</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="125"/>
+        <source>Lime Linux Wiki</source>
+        <translation>Lime Linux Wiki</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="242"/>
+        <source>Youtube Channel</source>
+        <translation>Youtube Canal</translation>
     </message>
 </context>
 </TS>
