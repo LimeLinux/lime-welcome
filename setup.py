@@ -25,7 +25,7 @@ from os import listdir, system
 langs = []
 for l in listdir('languages'):
     if l.endswith('ts'):
-        system('lrelease-qt5 languages/%s' % l)
+        system('lrelease languages/%s' % l)
         langs.append(('languages/%s' % l).replace('.ts', '.qm'))
 
 
