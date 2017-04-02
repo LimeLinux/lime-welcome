@@ -31,23 +31,23 @@ for l in listdir('languages'):
 
 system('pyrcc5 welcome.qrc -o welcome/resource.py')
 
-datas = [('/usr/share/applications', ['data/lime-welcome.desktop']),
-         ('/etc/skel/.config/autostart', ['data/lime-welcome.desktop']),
-         ('/usr/share/icons/hicolor/scalable/apps', ['images/lime-welcome.svg']),
-         ('/usr/share/welcome/languages', langs),
-         #('/usr/share/welcome/data', ["data/pisilinux-2-0-kurulum-belgesi.pdf", "data/lime-welcome.desktop"])
+datas = [('/usr/share/applications', ['data/limelinux-welcome.desktop']),
+         ('/etc/skel/.config/autostart', ['data/limelinux-welcome.desktop']),
+         ('/usr/share/icons/hicolor/scalable/apps', ['images/limelinux-welcome.svg']),
+         ('/usr/share/limelinux-welcome/languages', langs),
+         #('/usr/share/welcome/data', ["data/pisilinux-2-0-kurulum-belgesi.pdf", "data/limelinux-welcome.desktop"])
          ]
 
 setup(
-    name = "lime-welcome",
-    scripts = ["lime-welcome"],
+    name = "limelinux-welcome",
+    scripts = ["limelinux-welcome"],
     packages = find_packages(),
     version = "1.0",
     license = "GPL v3",
-    description = "Lime Linux Welcome",
+    description = "Lime GNU/Linux Welcome Application",
     author = "Metehan Özbek",
     author_email = "mthnzbk@gmail.com",
-    url = "https://github.com/LimeLinux/lime-welcome",
+    url = "https://github.com/LimeLinux/limelinux-welcome",
     keywords = ["PyQt5"],
     data_files = datas
 )

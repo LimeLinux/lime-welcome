@@ -4,20 +4,6 @@
 <context>
     <name>WelcomeUi</name>
     <message>
-        <location filename="../welcome/welcomeui.py" line="31"/>
-        <source>Welcome Pisi Linux</source>
-        <translation type="obsolete">Willkommen Pisi Linux</translation>
-    </message>
-    <message>
-        <location filename="../welcome/welcomeui.py" line="79"/>
-        <source>Welcome to Pisi Linux! Thank you for joining our community!
-
-As Pisi Linux developers, we hope you enjoy using Pisi Linux. The following links will guide you while using Pisi Linux. Please do not hesitate to inform about your experiences, suggestions and errors you have encountered.</source>
-        <translation type="obsolete">Willkommen bei Pisi Linux! Danke für Ihr Interesse an unserer Community
-
-Wir als Pisi Linux Entwickler hoffen Sie genießen es Pisi Linux zu benutzen. Die nachfolgenden Links führen Sie auf Pisi Linux Seiten und geben Ihnen eine kleine Hilfestellung. Bitte zögern Sie nicht uns Ihre Erfahrungen oder Fehler die Sie entdeckt haben mitzuteilen. Auch für Anregungen von Ihnen sind wir sehr dankbar.</translation>
-    </message>
-    <message>
         <location filename="../welcome/welcomeui.py" line="103"/>
         <source>Documents</source>
         <translation>Dokumente</translation>
@@ -31,11 +17,6 @@ Wir als Pisi Linux Entwickler hoffen Sie genießen es Pisi Linux zu benutzen. Di
         <location filename="../welcome/welcomeui.py" line="117"/>
         <source>Release Notes</source>
         <translation>Versionshinweise</translation>
-    </message>
-    <message>
-        <location filename="../welcome/welcomeui.py" line="124"/>
-        <source>Pisi Linux Wiki</source>
-        <translation type="obsolete">Pisi Linux Wiki</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="138"/>
@@ -73,19 +54,9 @@ Wir als Pisi Linux Entwickler hoffen Sie genießen es Pisi Linux zu benutzen. Di
         <translation>Spenden</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="182"/>
-        <source>Note: The username and password is &quot;live&quot;.</source>
-        <translation type="obsolete">Bitte beachten Sie: Der Benutzername und das Passwort sind &quot;live&quot;.</translation>
-    </message>
-    <message>
         <location filename="../welcome/welcomeui.py" line="226"/>
         <source>Facebook Page</source>
         <translation>Facebook Seite</translation>
-    </message>
-    <message>
-        <location filename="../welcome/welcomeui.py" line="234"/>
-        <source>Google+ Page</source>
-        <translation type="obsolete">Google+ Seite</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="234"/>
@@ -118,19 +89,9 @@ Wir als Pisi Linux Entwickler hoffen Sie genießen es Pisi Linux zu benutzen. Di
         <translation>Das Passwort is &quot;live&quot;.</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="159"/>
-        <source>Bugs Report</source>
-        <translation type="obsolete">Fehlerbericht</translation>
-    </message>
-    <message>
         <location filename="../welcome/welcomeui.py" line="160"/>
         <source>Bug Report</source>
         <translation>Fehlerbericht</translation>
-    </message>
-    <message>
-        <location filename="../welcome/welcomeui.py" line="31"/>
-        <source>Welcome Lime Linux</source>
-        <translation>Willkommen Lime Linux</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="80"/>
@@ -142,14 +103,19 @@ As Lime Linux developers, we hope you enjoy using Lime Linux. The following link
 Wir als Lime Linux Entwickler hoffen Sie genießen es Lime Linux zu benutzen. Die nachfolgenden Links führen Sie auf Lime Linux Seiten und geben Ihnen eine kleine Hilfestellung. Bitte zögern Sie nicht uns Ihre Erfahrungen oder Fehler die Sie entdeckt haben mitzuteilen. Auch für Anregungen von Ihnen sind wir sehr dankbar.</translation>
     </message>
     <message>
-        <location filename="../welcome/welcomeui.py" line="125"/>
-        <source>Lime Linux Wiki</source>
-        <translation>Lime Linux Wiki</translation>
-    </message>
-    <message>
         <location filename="../welcome/welcomeui.py" line="242"/>
         <source>Youtube Channel</source>
         <translation>Youtube Kanal</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="31"/>
+        <source>Welcome Lime GNU/Linux</source>
+        <translation>Willkommen Lime GNU/Linux</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="125"/>
+        <source>Wiki</source>
+        <translation>Wiki</translation>
     </message>
 </context>
 </TS>

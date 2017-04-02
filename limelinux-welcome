@@ -32,7 +32,7 @@ def main():
 
     locale = QLocale.system().name()
     translator = QTranslator(app)
-    translator.load("/usr/share/lime-welcome/languages/{}.qm".format(locale))
+    translator.load("/usr/share/limelinux-welcome/languages/{}.qm".format(locale))
     app.installTranslator(translator)
 
     window = WelcomeUi()

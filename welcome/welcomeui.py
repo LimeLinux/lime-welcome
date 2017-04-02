@@ -28,9 +28,9 @@ import os, shutil
 class WelcomeUi(QWidget):
     def __init__(self, parent=None):
         super().__init__()
-        self.setWindowTitle(self.tr("Welcome Lime Linux"))
+        self.setWindowTitle(self.tr("Welcome Lime GNU/Linux"))
         self.setFixedSize(700, 475)
-        self.setWindowIcon(QIcon(":/images/lime-welcome.svg"))
+        self.setWindowIcon(QIcon(":/images/limelinux-welcome.svg"))
         self.setLayout(QVBoxLayout())
         self.layout().setSpacing(0)
         self.layout().setContentsMargins(0, 0, 0, 0)
@@ -122,7 +122,7 @@ class WelcomeUi(QWidget):
         self.wikiButton = QPushButton()
         self.wikiButton.setFixedWidth(150)
         self.wikiButton.setCursor(Qt.PointingHandCursor)
-        self.wikiButton.setText(self.tr("Lime Linux Wiki"))
+        self.wikiButton.setText(self.tr("Wiki"))
         self.wikiButton.setIcon(QIcon(":/images/wiki.svg"))
         self.wikiButton.setIconSize(QSize(32, 32))
         vlayoutI.addWidget(self.wikiButton)
@@ -173,13 +173,13 @@ class WelcomeUi(QWidget):
         self.installLabel.setText(self.tr("Installation"))
         vlayoutIII.addWidget(self.installLabel)
 
-        self.useKalamarButton = QPushButton()
-        self.useKalamarButton.setFixedWidth(150)
-        self.useKalamarButton.setCursor(Qt.PointingHandCursor)
-        self.useKalamarButton.setText(self.tr("Start Installation"))
-        self.useKalamarButton.setIcon(QIcon(":/images/calamares.svg"))
-        self.useKalamarButton.setIconSize(QSize(32, 32))
-        vlayoutIII.addWidget(self.useKalamarButton)
+        self.useLiliiButton = QPushButton()
+        self.useLiliiButton.setFixedWidth(150)
+        self.useLiliiButton.setCursor(Qt.PointingHandCursor)
+        self.useLiliiButton.setText(self.tr("Start Installation"))
+        self.useLiliiButton.setIcon(QIcon.fromTheme("lilii-logo"))
+        self.useLiliiButton.setIconSize(QSize(32, 32))
+        vlayoutIII.addWidget(self.useLiliiButton)
 
         self.getInvolvedButton = QPushButton()
         self.getInvolvedButton.setFixedWidth(150)
@@ -254,7 +254,7 @@ class WelcomeUi(QWidget):
 
         self.openCheckBox = QCheckBox()
         self.openCheckBox.setChecked(os.path.exists(os.path.join(os.environ["HOME"],
-                                                                 ".config", "autostart", "lime-welcome.desktop")))
+                                                                 ".config", "autostart", "limelinux-welcome.desktop")))
         font = self.openCheckBox.font()
         font.setBold(True)
         self.openCheckBox.setFont(font)
@@ -279,12 +279,12 @@ class WelcomeUi(QWidget):
 
     def setSystem(self, type):
         if type == "live":
-            self.useKalamarButton.clicked.connect(self.calamaresExec)
+            self.useLiliiButton.clicked.connect(self.calamaresExec)
 
         else:
-            self.useKalamarButton.setText(self.tr("Start Kaptan"))
-            self.useKalamarButton.setIcon(QIcon(":/images/kaptan.svg"))
-            self.useKalamarButton.clicked.connect(self.kaptanExec)
+            self.useLiliiButton.setText(self.tr("Start Kaptan"))
+            self.useLiliiButton.setIcon(QIcon(":/images/kaptan.svg"))
+            self.useLiliiButton.clicked.connect(self.kaptanExec)
             self.installLabel.setText(self.tr("Project"))
             self.noteLabel.hide()
             self.contentWidget.layout().addItem(QSpacerItem(20, 50, QSizePolicy.Expanding, QSizePolicy.Minimum))
@@ -302,7 +302,7 @@ class WelcomeUi(QWidget):
         QDesktopServices.openUrl(QUrl("https://www.youtube.com/channel/UCCYADWqop8p9wH6UbKWFFgg"))
 
     def installedDoc(self):
-        QProcess.startDetached("xdg-open /usr/share/welcome/data/pisilinux-2-0-kurulum-belgesi.pdf")
+        QProcess.startDetached("xdg-open /usr/share/limelinux-welcome/data/pisilinux-2-0-kurulum-belgesi.pdf")
 
     def releaseNote(self):
         pass
@@ -317,7 +317,7 @@ class WelcomeUi(QWidget):
         QDesktopServices.openUrl(QUrl("https://kiwiirc.com/client/irc.freenode.net/#limelinux"))
 
     def calamaresExec(self):
-        QProcess.startDetached("sudo LC_ALL=en_US calamares &")
+        QProcess.startDetached("sudo lilii &")
 
     def kaptanExec(self):
         QProcess.startDetached("kaptan &")
@@ -334,7 +334,7 @@ class WelcomeUi(QWidget):
     def openState(self):
         if self.openCheckBox.isChecked():
             try:
-                shutil.copy("/usr/share/lime-welcome/data/lime-welcome.desktop",
+                shutil.copy("/usr/share/limelinux-welcome/data/limelinux-welcome.desktop",
                             os.path.join(os.environ["HOME"], ".config", "autostart"))
 
             except FileNotFoundError as err:
@@ -342,7 +342,7 @@ class WelcomeUi(QWidget):
 
         else:
             try:
-                os.remove(os.path.join(os.environ["HOME"], ".config", "autostart", "lime-welcome.desktop"))
+                os.remove(os.path.join(os.environ["HOME"], ".config", "autostart", "limelinux-welcome.desktop"))
 
             except OSError as err:
                 print(err)
