@@ -279,7 +279,7 @@ class WelcomeUi(QWidget):
 
     def setSystem(self, type):
         if type == "live":
-            self.useLiliiButton.clicked.connect(self.calamaresExec)
+            self.useLiliiButton.clicked.connect(self.liliiExec)
 
         else:
             self.useLiliiButton.setText(self.tr("Start Kaptan"))
@@ -316,7 +316,7 @@ class WelcomeUi(QWidget):
     def chatPages(self):
         QDesktopServices.openUrl(QUrl("https://kiwiirc.com/client/irc.freenode.net/#limelinux"))
 
-    def calamaresExec(self):
+    def liliiExec(self):
         QProcess.startDetached("sudo lilii &")
 
     def kaptanExec(self):
