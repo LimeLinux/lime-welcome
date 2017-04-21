@@ -302,7 +302,7 @@ class WelcomeUi(QWidget):
         QDesktopServices.openUrl(QUrl("https://www.youtube.com/channel/UCCYADWqop8p9wH6UbKWFFgg"))
 
     def installedDoc(self):
-        QProcess.startDetached("xdg-open /usr/share/limelinux-welcome/data/pisilinux-2-0-kurulum-belgesi.pdf")
+        QProcess.startDetached("xdg-open /usr/share/limelinux-welcome/data/limelinux-install-doc.pdf")
 
     def releaseNote(self):
         pass
