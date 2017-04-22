@@ -282,9 +282,9 @@ class WelcomeUi(QWidget):
             self.useLiliiButton.clicked.connect(self.liliiExec)
 
         else:
-            self.useLiliiButton.setText(self.tr("Start Kaptan"))
-            self.useLiliiButton.setIcon(QIcon(":/images/kaptan.svg"))
-            self.useLiliiButton.clicked.connect(self.kaptanExec)
+            self.useLiliiButton.setText(self.tr("Start Driver Manager"))
+            self.useLiliiButton.setIcon(QIcon(":/images/limelinux-dm.svg"))
+            self.useLiliiButton.clicked.connect(self.driverManagerExec)
             self.installLabel.setText(self.tr("Project"))
             self.noteLabel.hide()
             self.contentWidget.layout().addItem(QSpacerItem(20, 50, QSizePolicy.Expanding, QSizePolicy.Minimum))
@@ -319,8 +319,8 @@ class WelcomeUi(QWidget):
     def liliiExec(self):
         QProcess.startDetached("sudo lilii &")
 
-    def kaptanExec(self):
-        QProcess.startDetached("kaptan &")
+    def driverManagerExec(self):
+        QProcess.startDetached("limelinux-dm &")
 
     def involvedPage(self):
         QDesktopServices.openUrl(QUrl("http://www.limelinux.com/iletisim/"))
