@@ -104,7 +104,7 @@ class WelcomeUi(QWidget):
         vlayoutI.addWidget(self.docLabel)
 
         self.installDocButton = QPushButton()
-        self.installDocButton.setFixedWidth(150)
+        self.installDocButton.setFixedWidth(185)
         self.installDocButton.setCursor(Qt.PointingHandCursor)
         self.installDocButton.setText(self.tr("Installation Guide"))
         self.installDocButton.setIcon(QIcon(":/images/guide.svg"))
@@ -120,7 +120,7 @@ class WelcomeUi(QWidget):
         vlayoutI.addWidget(self.releaseButton)
 
         self.wikiButton = QPushButton()
-        self.wikiButton.setFixedWidth(150)
+        self.wikiButton.setFixedWidth(185)
         self.wikiButton.setCursor(Qt.PointingHandCursor)
         self.wikiButton.setText(self.tr("Wiki"))
         self.wikiButton.setIcon(QIcon(":/images/wiki.svg"))
@@ -139,7 +139,7 @@ class WelcomeUi(QWidget):
         vlayoutII.addWidget(self.supportLabel)
 
         self.forumButton = QPushButton()
-        self.forumButton.setFixedWidth(150)
+        self.forumButton.setFixedWidth(185)
         self.forumButton.setCursor(Qt.PointingHandCursor)
         self.forumButton.setText(self.tr("Forum"))
         self.forumButton.setIconSize(QSize(32, 32))
@@ -147,7 +147,7 @@ class WelcomeUi(QWidget):
         vlayoutII.addWidget(self.forumButton)
 
         self.chatButton = QPushButton()
-        self.chatButton.setFixedWidth(150)
+        self.chatButton.setFixedWidth(185)
         self.chatButton.setCursor(Qt.PointingHandCursor)
         self.chatButton.setText(self.tr("Chat Rooms"))
         self.chatButton.setIcon(QIcon(":/images/chat.svg"))
@@ -155,7 +155,7 @@ class WelcomeUi(QWidget):
         vlayoutII.addWidget(self.chatButton)
 
         self.bugsButton = QPushButton()
-        self.bugsButton.setFixedWidth(150)
+        self.bugsButton.setFixedWidth(185)
         self.bugsButton.setCursor(Qt.PointingHandCursor)
         self.bugsButton.setText(self.tr("Bug Report"))
         self.bugsButton.setIcon(QIcon(":/images/bocuk.svg"))
@@ -174,7 +174,7 @@ class WelcomeUi(QWidget):
         vlayoutIII.addWidget(self.installLabel)
 
         self.useLiliiButton = QPushButton()
-        self.useLiliiButton.setFixedWidth(150)
+        self.useLiliiButton.setFixedWidth(185)
         self.useLiliiButton.setCursor(Qt.PointingHandCursor)
         self.useLiliiButton.setText(self.tr("Start Installation"))
         self.useLiliiButton.setIcon(QIcon.fromTheme("lilii-logo"))
@@ -182,7 +182,7 @@ class WelcomeUi(QWidget):
         vlayoutIII.addWidget(self.useLiliiButton)
 
         self.getInvolvedButton = QPushButton()
-        self.getInvolvedButton.setFixedWidth(150)
+        self.getInvolvedButton.setFixedWidth(185)
         self.getInvolvedButton.setCursor(Qt.PointingHandCursor)
         self.getInvolvedButton.setText(self.tr("Join Us"))
         self.getInvolvedButton.setIcon(QIcon(":/images/joinus.svg"))
@@ -190,7 +190,7 @@ class WelcomeUi(QWidget):
         vlayoutIII.addWidget(self.getInvolvedButton)
 
         self.donateButton = QPushButton()
-        self.donateButton.setFixedWidth(150)
+        self.donateButton.setFixedWidth(185)
         self.donateButton.setCursor(Qt.PointingHandCursor)
         self.donateButton.setText(self.tr("Donate"))
         self.donateButton.setIcon(QIcon(":/images/donate.svg"))

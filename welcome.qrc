@@ -19,5 +19,6 @@
         <file>images/kaptan.svg</file>
         <file>images/calamares.svg</file>
         <file>images/bocuk.svg</file>
+        <file>images/limelinux-dm.svg</file>
     </qresource>
 </RCC>

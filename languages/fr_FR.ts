@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="fr_FR" sourcelanguage="en_US">
+<TS version="2.1" language="fr_FR" sourcelanguage="en_US">
 <context>
     <name>WelcomeUi</name>
     <message>
@@ -76,7 +76,7 @@
     <message>
         <location filename="../welcome/welcomeui.py" line="285"/>
         <source>Start Kaptan</source>
-        <translation>Démarrer Kaptan</translation>
+        <translation type="obsolete">Démarrer Kaptan</translation>
     </message>
     <message>
         <location filename="../welcome/welcomeui.py" line="288"/>
@@ -116,6 +116,11 @@ En tant que développeurs Lime Linux, nous espérons que vous apprécierez Lime 
         <location filename="../welcome/welcomeui.py" line="125"/>
         <source>Wiki</source>
         <translation>Wiki</translation>
+    </message>
+    <message>
+        <location filename="../welcome/welcomeui.py" line="285"/>
+        <source>Start Driver Manager</source>
+        <translation>Démarrez le Gestionnaire de Plotes</translation>
     </message>
 </context>
 </TS>
