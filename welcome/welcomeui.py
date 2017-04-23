@@ -112,7 +112,7 @@ class WelcomeUi(QWidget):
         vlayoutI.addWidget(self.installDocButton)
 
         self.releaseButton = QPushButton()
-        self.releaseButton.setFixedWidth(135)
+        self.releaseButton.setFixedWidth(185)
         self.releaseButton.setCursor(Qt.PointingHandCursor)
         self.releaseButton.setText(self.tr("Release Notes"))
         self.releaseButton.setIcon(QIcon(":/images/info.svg"))
